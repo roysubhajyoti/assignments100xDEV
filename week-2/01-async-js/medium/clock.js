@@ -17,7 +17,7 @@ setInterval(()=>{
         console.log(hr+" : "+min+" :"+sec +" PM");
     }
     else{
-        console.log(hr+" : "+min+" :"+sec);
+        console.log(hr+" : "+min+" :"+sec +" AM");
     }
 
 
