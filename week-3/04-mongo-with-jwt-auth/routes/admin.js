@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 const { JWT_SECRET } = require("../config");
 const { Admin, Course } = require("../db");
 // Admin Routes
+<<<<<<< HEAD
 router.post("/signup", async (req, res) => {
   // Implement admin signup logic
   const username = req.body.username;
@@ -81,6 +82,22 @@ router.get("/courses", adminMiddleware, async (req, res) => {
   res.json({
     courses,
   });
+=======
+router.post('/signup', (req, res) => {
+    // Implement admin signup logic
+});
+
+router.post('/signin', (req, res) => {
+    // Implement admin signup logic
+});
+
+router.post('/courses', adminMiddleware, (req, res) => {
+    // Implement course creation logic
+});
+
+router.get('/courses', adminMiddleware, (req, res) => {
+    // Implement fetching all courses logic
+>>>>>>> e8b405fa608a15dde3706209873cd93300e27f32
 });
 
 module.exports = router;
